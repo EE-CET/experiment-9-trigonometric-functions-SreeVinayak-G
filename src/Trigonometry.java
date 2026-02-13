@@ -1,14 +1,24 @@
+import java.util.*;
 public class Trigonometry {
 
-    // TODO: Create 'public static double sine(double angle)'
+    public static double sine(double angle){
+        double angleInRadians = Math.toRadians(angle);
+        return Math.sin(angleInRadians);
+    }
     
+    public static double cosine(double angle){
+        double angleInRadians = Math.toRadians(angle);
+        return Math.cos(angleInRadians);
+    }
 
-    // TODO: Create 'public static double cosine(double angle)'
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double angle = sc.nextDouble();
+        double sineValue = sine(angle);
+        double cosineValue = cosine(angle);
+        System.out.println("Sine: "+sineValue);
+        System.out.println("Cosine: "+cosineValue);
+    }
     
-
-    
-        // TODO: Read angle
-        // TODO: Call sine() and cosine()
-        // TODO: Print results in the required format
     
 }
